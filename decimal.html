@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marise's Machine</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="calc.png" type="image/x-icon">
+</head>
+<body>    
+    <div class="container">
+        <header class="topo">
+            <nav id="menu_inicial">
+                <ul id="lista_inicial">
+                    <li class="item_nav active">
+                        <a href="decimal.html">Decimal</a>
+                    </li>
+                    <li class="item_nav">
+                        <a href="binario.html">Binário</a>
+                    </li>
+                    <li class="item_nav">
+                        <a href="octal.html">Octal</a>
+                    </li>
+                    <li class="item_nav">
+                        <a href="hexa.html">Hexadecimal</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>  
+        
+        <h1>Marise's Machine</h1>
+        
+        <h3>Decimal</h3>
+        <input id="valor_decimal" type="text" placeholder="Digite o valor em decimal">
+        
+        <h3>Converter para:</h3>
+        <select id="conversionChoice">
+            <option value="binario">Binário</option>
+            <option value="octal">Octal</option>
+            <option value="hexadecimal">Hexadecimal</option>
+        </select>
+
+        <div class="result" id="conversoes_bases">
+            <span class="result-title" id="result-title">Resultado:</span>
+            <span id="result-value"></span>
+        </div>
+
+        <button onclick="converterDecimal()">Converter</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
