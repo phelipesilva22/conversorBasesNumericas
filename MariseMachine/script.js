@@ -22,6 +22,7 @@ function converterDecimal() {
 }
 
 function converterBinario() {
+    // --- Variáveis da função ---
     var binario = parseInt(document.getElementById("valor_binario").value, 2);
     let octal = binario.toString(8);
     let hexadecimal = binario.toString(16);
@@ -44,7 +45,8 @@ function converterBinario() {
 }
 
 function converterOctal() {
-    var octal = parseInt(document.getElementById("valor_binario").value, 8);
+    // --- Variáveis da função ---
+    var octal = parseInt(document.getElementById("valor_octal").value, 8);
     let binario = octal.toString(2);
     let hexadecimal = octal.toString(16);
     let decimal = octal.toString(10);
